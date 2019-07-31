@@ -1,0 +1,4 @@
+slackclient
+requests==2.22.0
+Flask==0.12.2
+Flask-RESTful==0.3.6

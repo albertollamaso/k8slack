@@ -1,0 +1,23 @@
+server {
+
+    listen 80;
+    server_name example.org;
+
+    access_log            /var/log/nginx/k8slack.access.log;
+
+    location / {
+
+      proxy_set_header        Host $host;
+      proxy_set_header        X-Real-IP $remote_addr;
+      proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_set_header        X-Forwarded-Proto $scheme;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection "upgrade";
+
+      # Fix the “It appears that your reverse proxy set up is broken" error.
+      proxy_pass          http://localhost:5002;
+      #proxy_pass "/nr/comms"  "ws://localhost:1880/comms"
+      proxy_read_timeout  90;
+
+    }
+  }
