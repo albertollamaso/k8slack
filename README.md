@@ -6,7 +6,7 @@ k8slack is an open source integration between Kubernetes and Slack.
 
 You can get logs from your running Pods in your kubernetes cluster and upload them to a Slack channel with one command.
 
-![Command](https://github.com/albertollamaso/k8slack/blob/master/images/command.gif)
+<p align="center"><img width="60%" src="images/command.gif"/></p>
 
 ## Installation
 
@@ -24,7 +24,8 @@ Example:
 
 Example:
 
-![Slash parameters](https://github.com/albertollamaso/k8slack/blob/master/images/slash_command.png)
+<p align="center"><img width="60%" src="images/slash_command.png"/></p>
+
 
 - Now we need to create a Bot User under the same App in order to get the token for the integration
 
@@ -32,7 +33,8 @@ Example:
 
 Example:
 
-![oauth](https://github.com/albertollamaso/k8slack/blob/master/images/oauth.png)
+<p align="center"><img width="60%" src="images/oauth.png"/></p>
+
 
 
 Too much theory, let's get hands dirty and run our Integration. 
