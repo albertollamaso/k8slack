@@ -16,7 +16,7 @@ Following is the step by step to get the integration working.
 
 Example:
 
-![Create Slack App](https://github.com/albertollamaso/k8slack/blob/master/images/create_app.png)
+<p align="center"><img width="60%" src="images/create_app.png"/></p>
 
 - Inside the created App, let's create a Slash command which is going to be the command we are going to execute in Slack in order to get the logs.
 
