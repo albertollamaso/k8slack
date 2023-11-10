@@ -1,4 +1,4 @@
 slackclient
 requests==2.31.0
-Flask==0.12.2
+Flask==2.2.5
 Flask-RESTful==0.3.6
